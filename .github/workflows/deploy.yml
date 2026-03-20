@@ -33,5 +33,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
           local-dir: ./dist/
-          server-dir: /domains/eidfitr-fam.temc.web.id/public_html/
+          server-dir: /domains/temc.web.id/public_html/idulfitri/
           dangerous-clean-slate: false
