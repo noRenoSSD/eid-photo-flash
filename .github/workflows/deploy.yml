@@ -25,13 +25,14 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy to Hostinger via FTP
+      - name: Deploy to Hostinger via FTPS
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
+          protocol: ftps
           local-dir: ./dist/
           server-dir: /domains/temc.web.id/public_html/idulfitri/
           dangerous-clean-slate: false
