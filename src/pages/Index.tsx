@@ -46,7 +46,7 @@ const Index = () => {
                 Keluarga Besar
               </h1>
               <p className="font-handwritten text-3xl font-bold text-foreground/70 sm:text-4xl">
-                [Nama Keluarga]
+                KUWAT SANTOSO, S.T., M.Kom.
               </p>
 
               <div className="mx-auto my-5 h-px w-16 bg-border" />
