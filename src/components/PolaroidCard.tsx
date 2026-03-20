@@ -14,10 +14,13 @@ const PolaroidCard = () => (
     >
       {/* Photo */}
       <div className="overflow-hidden rounded-sm">
-        <img
-          src={familyPhoto}
-          alt="Family Eid Celebration"
-          className="aspect-[3/4] w-full object-cover"
+        <video
+          src={new URL("@/assets/video_pakkuwat.mp4", import.meta.url).href}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="aspect-[2/4] w-full object-cover"
         />
       </div>
 
