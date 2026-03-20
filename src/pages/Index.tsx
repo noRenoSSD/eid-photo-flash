@@ -4,7 +4,6 @@ import SplashScreen from "@/components/SplashScreen";
 import PolaroidCard from "@/components/PolaroidCard";
 import FloatingElements from "@/components/FloatingElements";
 import AudioPlayer from "@/components/AudioPlayer";
-import ShareButton from "@/components/ShareButton";
 
 const Index = () => {
   const [showContent, setShowContent] = useState(false);
@@ -22,9 +21,7 @@ const Index = () => {
       <AudioPlayer />
 
       {/* Floating decorations */}
-      <AnimatePresence>
-        {showContent && <FloatingElements />}
-      </AnimatePresence>
+      <AnimatePresence>{showContent && <FloatingElements />}</AnimatePresence>
 
       {/* Main content */}
       <AnimatePresence>
@@ -66,16 +63,6 @@ const Index = () => {
               <p className="mt-3 font-body text-sm leading-relaxed text-muted-foreground sm:text-base">
                 Mohon Maaf Lahir dan Batin 🙏
               </p>
-            </motion.div>
-
-            {/* Share button */}
-            <motion.div
-              className="mt-8"
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.8, duration: 0.5 }}
-            >
-              <ShareButton />
             </motion.div>
 
             {/* Footer */}
