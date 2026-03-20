@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import familyPhoto from "@/assets/family-photo.jpg";
+import familyPhoto from "@/assets/foto_pakkuwat.jpeg";
 
 const PolaroidCard = () => (
   <motion.div
@@ -14,13 +14,10 @@ const PolaroidCard = () => (
     >
       {/* Photo */}
       <div className="overflow-hidden rounded-sm">
-        <video
-          src={new URL("@/assets/video_pakkuwat.mp4", import.meta.url).href}
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="aspect-[2/4] w-full object-cover"
+        <img
+          src={familyPhoto}
+          alt="Family Eid Celebration"
+          className="aspect-[3/5] w-full object-cover"
         />
       </div>
 
