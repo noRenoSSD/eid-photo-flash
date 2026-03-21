@@ -72,7 +72,7 @@ const Index = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 1.2 }}
             >
-              Eid Snap • 2025
+              Eid Snap • 2026
             </motion.p>
           </motion.main>
         )}
